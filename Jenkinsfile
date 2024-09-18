@@ -11,21 +11,21 @@ pipeline {
         stage('Build') {  // Stage 2: Build the project
             steps {
                 echo 'Building project...'
-                bat 'mvn clean install'  // Replace with your actual build command (e.g., npm, gradle, etc.) for Windows
+                bat 'echo Build step for Windows'  // Basic Windows command for testing
             }
         }
         
         stage('Test') {  // Stage 3: Run tests
             steps {
                 echo 'Running tests...'
-                bat 'mvn test'  // Replace with your testing command for Windows
+                bat 'echo Test step for Windows'  // Basic Windows command for testing
             }
         }
         
-        stage('Deploy') {  // Stage 4: Deploy the project (could be to staging/production)
+        stage('Deploy') {  // Stage 4: Deploy the project
             steps {
                 echo 'Deploying application...'
-                // Add deployment script here (e.g., copy files to a server, run a deploy script)
+                bat 'echo Deploy step for Windows'  // Basic Windows command for testing
             }
         }
     }

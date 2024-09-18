@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {  // Stage 1: Checkout code from the repository
             steps {
-                git 'https://github.com/username/repository.git'  // Replace with your repo URL
+                git 'https://github.com/kinghoys/jenkins-demo'  // Replace with your repo URL
             }
         }
         

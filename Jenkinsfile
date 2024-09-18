@@ -11,14 +11,14 @@ pipeline {
         stage('Build') {  // Stage 2: Build the project
             steps {
                 echo 'Building project...'
-                sh 'mvn clean install'  // Replace with your actual build command (e.g., npm, gradle, etc.)
+                bat 'mvn clean install'  // Replace with your actual build command (e.g., npm, gradle, etc.) for Windows
             }
         }
         
         stage('Test') {  // Stage 3: Run tests
             steps {
                 echo 'Running tests...'
-                sh 'mvn test'  // Replace with your testing command
+                bat 'mvn test'  // Replace with your testing command for Windows
             }
         }
         
